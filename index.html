@@ -4,8 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>smart ticketing</title>
-</head>
-<body>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/4e532f8ca2.js" crossorigin="anonymous"></script>
+    <!-- tailwind setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <body>
+       
+<!-- daisyUI -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
     
+</head>
+
+
+    <!-- navbar section start -->
+
+<!-- banner section start -->
+
+
+<!-- card section start -->
+
+
+ <!-- main section start -->
+
+
+ <!-- seat booking using dom manipulation -->
+<section class="w-11/12 bg-white px-8 py-5 mx-auto rounded-2xl shadow-md grid grid-cols-3 gap-5 ">
+    <!-- select seat -->
+    <div class="bg-white col-span-2 " >
+        <h2 class="font-semibold text-gray-600">select your seat</h2>
+        <div class="border-b-2 border-dashed my-4"></div>
+        <div class="flex justify-between items-center px-2">
+            <p class="text-slate-500">
+                <i class="fa-solid fa-couch"></i>
+                <span>Available</span>
+            </p>
+            <p class="text-green-600">
+                <i class="fa-solid fa-couch"></i>
+                <span>selected</span>
+            </p>
+            
+        </div>
+        <div class="border-b-2 border-dashed my-4"></div>
+
+        
+ <!-- section: seat section -->
+ <section class=" grid grid-cols-12 items-center gap-y-5 mr-20 ">
+    <!-- driver seat -->
+     <p class="col-span-1"></p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <p class="col-span-8"></p>
+        <button class="btn col-span-2">
+            <i class="fa-regular fa-circle"></i>
+        </button>
+
+     </div>
+    
+
+    <!-- row-1 A-->
+     <p class="col-span-1">A</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button onclick="handleSelectSeat(this)" 
+         class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >A1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" > A4 </button>
+     </div>
+    <!-- row-2 B -->
+     <p class="col-span-1">B</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >B1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">B2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">B3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" >B4 </button>
+     </div>
+    <!-- row-3 C -->
+     <p class="col-span-1">C</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >C1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">C2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">C3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" >C4 </button>
+     </div>
+    <!-- row-4 D -->
+     <p class="col-span-1">D</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >D1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">D2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">D3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" >D4 </button>
+     </div>
+    <!-- row-5 E -->
+     <p class="col-span-1">E</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >A1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" > A4 </button>
+     </div>
+    <!-- row-6 f -->
+     <p class="col-span-1">F</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >A1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" > A4 </button>
+     </div>
+    <!-- row-7 G -->
+     <p class="col-span-1">G</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >A1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" > A4 </button>
+     </div>
+    <!-- row-8 H -->
+     <p class="col-span-1">H</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >A1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" > A4 </button>
+     </div>
+    <!-- row-9 I-->
+     <p class="col-span-1">I</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >A1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" > A4 </button>
+     </div>
+    <!-- row-10 J-->
+     <p class="col-span-1">J</p>
+     <div class="col-span-11 grid grid-cols-10 gap-16 items-center text-center ">
+        <button class="col-span-2 bg-slate-200 shadow-sm rounded-lg " >A1</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A2</button>
+        <p class="col-span-2"></p>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg ">A3</button>
+        <button  class="col-span-2 bg-slate-200 shadow-sm rounded-lg" > A4 </button>
+     </div>
+   
+ </section>
+
+</div>
+
+<!-- input section  -->
+<div class="border-l-2 border-dashed pl-2  " >
+
+    <div class=" ">
+        <h2 class="font-semibold text-gray-600">select your seat</h2>
+
+    </div>
+    <div class="border-b-2 border-dashed my-4"></div>
+<section class="  ">
+    <div class="bg-slate-100 shadow-sm p-8 rounded-xl">
+        <h3 class="flex justify-between px-4">
+            <p class="flex">
+                <span>seat</span>
+                <span class="bg-green-500 text-white flex justify-center items-center rounded-full w-4 h-4 p-2 text-sm font-normal ">0</span> 
+            </p>
+            <p>class</p>
+            <p>price</p>
+        </h3>
+        <div class="border-b-2 border-dashed my-4"></div> 
+        <ul  id="selected-seat" 
+        class="space-y-5">
+            <h3 class="text-3xl font-semibold text-red-400 capitalize text-center ">
+                No seat booked
+            </h3>
+        </ul>
+        <div class="border-b-2 border-dashed my-4"></div>
+        <div class="text-lg font-semibold flex justify-between">
+            <p>total price</p>
+            <p>
+                <span>BDT</span>
+                <span>****</span>
+            </p>
+        </div>
+        <div class="flex justify-center items-center">
+            <input class="bg-white rounded-lg p-2 my-4 text-lg" type=" text" placeholder="Have a coupon?">
+            <button disabled class="btn btn-primary ">Apply</button>
+        </div>
+        <div class="text-lg font-semibold flex justify-between my-4">
+            <p>Grand total</p>
+            <p>
+                <span>BDT</span>
+                <span>****</span>
+            </p>
+        </div>
+    </div>
+    <!-- form section -->
+     <div class="my-5">
+        <label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text font-semibold">Passenger name:</span>
+            </div>
+            <input class=" border-2 border-slate-100 shadow-md bg-white p-2 text-lg  " type="text" placeholder="Your Name" class="input w-full max-w-xs border-s-violet-100S" />
+          </label>
+        <label class="form-control w-full max-w-xs">
+            <div class="label my-2">
+              <span class="label-text font-semibold">Contact No:</span>
+            </div>
+            <input class=" border-2 border-slate-100 shadow-md bg-white p-2 text-lg  " type="number" placeholder="Your Contact:" class="input w-full max-w-xs border-s-violet-100S" />
+          </label>
+        <label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text font-semibold">Email:</span>
+            </div>
+            <input class=" border-2 border-slate-100 shadow-md bg-white p-2 text-lg  " type="text" placeholder="Your Email:" class="input w-full max-w-xs border-s-violet-100S" />
+          </label>
+          <button onclick="my_modal_1.showModal()" class=" btn btn-success  mt-4 w-11/12 font-semibold text-lg text-white uppercase  " >Next</button>
+          <!-- Open the modal using ID.showModal() method -->
+<div class="bg-white">
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+          <div class=" flex flex-col justify-center items-center">
+              <img src="./images/success.png" alt="">
+              <h3 class="text-lg font-bold text-green-400">Success!</h3>
+          </div>
+          <p class="py-4">Thank you for Booking Our Bus Seats. 
+              We are working hard to find the best service and deals for you. <br> <br>
+              <span class="text-gray-200">Shortly you will find a confirmation in your email.</span></p>
+          <div class="modal-action ">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn btn-success text-white">Continue</button>
+            </form>
+          </div>
+        </div>
+      </dialog>    
+</div>
+<div class="flex justify-between mt-4">
+    <a class="underline font-semibold hover:text-purple-400 duration-200 ease-in-out" href="#">Terms and Conditions</a>
+    <a class="underline font-semibold hover:text-purple-400 duration-200 ease-in-out" href="#">Cancellation Policy </a>
+</div>
+
+     </div>
+</section>
+
+</div>
+
+</section>
+
+
+<script src="./app.js"></script>
 </body>
 </html>
+
+
+<!-- backtick -->
+
